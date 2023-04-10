@@ -1,0 +1,232 @@
+.service{
+    padding-left: 24px;
+    .ant-breadcrumb{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 29px;
+        .ant-breadcrumb-link{
+            color: #7E7D88;
+        }
+        .ant-breadcrumb-link-2{
+            color: #FF7506;
+        }
+    }
+    h3{
+        margin-top: 45px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FF7506;
+    }
+
+    .add_device{
+        position: absolute;
+        top: 250px;
+        right: 0;
+        width: 80px;
+        height: 94px;
+        background-color: #FFF2E7;
+        border-radius: 8px 0px 0px 8px;
+        box-shadow: 0px 0px 6px #E7E9F2;
+        padding: 12px 0;
+        .icon_add{
+            position: absolute;
+            height: 28px;
+            width: 28px;
+            text-align: center;
+            left: 28px;
+            background-color: #FF9138;
+            color: #ffff;
+            transform: rotate(-180deg);
+            border-radius: 8px;
+            overflow: hidden;
+            svg{
+                width: 100%;
+                height: 100%;
+                g>path{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                    overflow: hidden;
+                }
+            }
+        }
+        span{
+            margin-top: 32px;
+            position: absolute;
+            width: 62px;
+            height: 38px;
+            top : 13px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            color: #FF7506;
+        }
+    }
+
+    .data_classification{
+        width: 1112px;
+        margin-top: 16px;
+        h6{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #282739;           
+           }
+       .active{
+           .ant-select{
+            display: flex;
+            align-items: center;
+            width: 300px;
+            height: 44px;
+            padding: 5px 12px;
+            border-radius: 8px;
+            background-color: #FFFFFF;
+            border: 1.5px solid #D4D4D7;
+            .ant-select-selector{
+                width: 100%;
+                height: 100%;
+                border: none;
+                .ant-select-selection-placeholder{
+                    font-size: 16px;
+                    color: #535261 !important;
+                    font-weight: 400;              
+                }                                               
+            }
+            .ant-select-arrow{
+                list-style: 2;             
+                border-radius: 0px;
+                .anticon{
+                    width: 19px;
+                    height: 19px;
+                    svg{
+                        color: #FF7506;
+                        padding: 0;
+                        width: 100% !important;
+                        height: 80% !important;
+                        path{
+                            width: 12px !important;
+                            height: 6px !important;
+                        }                        
+                    }             
+                }
+            } 
+            .ant-select-show-search .ant-select-selector{
+                background-color: #FF7506;
+            }            
+        }          
+       }
+       .data_time{
+            h6{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(40, 39, 57, 1);
+        
+            }
+            .icon_sm{
+                display:contents;
+                color: #535261;
+                width: 5px;
+                height: 5px;
+                margin: 0 8px;
+            }
+            .ant-picker{
+                height: 44px;
+                width: 150px;
+                left: 0px;
+                top: 0px;
+                border-radius: 8px;
+                padding: 8px 4px;
+                background-color: #FFFFFF;
+                border: 1.5px solid #D4D4D7;
+                border-radius: 10px;
+                .ant-picker-input{
+                    input{
+                        color: #A9A9B0;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin-left: 30px;
+                    }
+                    .ant-picker-suffix{
+                        position: absolute;
+                        height: 17px;
+                        width: 17px;
+                        left: 0px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        border-radius: 0px;
+                        color: #FF7506;
+                        svg{
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                    }
+                }
+            }
+        }
+       .search{
+           position: absolute;
+           right: 0;
+           .ant-input-group-wrapper{
+               width: 300px;
+               padding: 5px;
+               height: 44px;
+               background-color: #FFFFFF;
+               border: 1.5px solid #D4D4D7;
+               border-radius: 8px;
+               .ant-input-group{
+                   width: 100%;
+                   height: 100%;
+                .ant-input{
+                    border: none;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #A9A9B0;
+                    
+                }
+                .ant-input-group-addon{
+                    .ant-btn{
+                        border: none;
+                        box-shadow: none;
+                        background-color: #FFFFFF;
+                        .anticon-search{
+                            color: rgba(255, 117, 6, 1);
+                            font-weight: bold;
+                        }
+                    }
+                }
+               }
+           }
+       } 
+    }
+
+
+    .ant-layout-content{
+        margin-top: 13px;
+        .table{
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            thead{
+                background-color: #FF9138;
+                color:  #FFFFFF;           
+            }
+            tbody{
+                tr:nth-child(even) {
+                    background-color: #FFF2E7;
+                }            
+                tr:nth-child(odd) {
+                    background-color: white;
+                }
+            }
+        }
+    }
+}

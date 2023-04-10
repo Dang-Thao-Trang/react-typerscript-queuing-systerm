@@ -1,0 +1,52 @@
+.user{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    .icon{
+        position: relative;
+        height: 40px;
+        width: 32px;
+        border-radius: 50%;
+        background: rgba(255, 242, 231, 1);
+        margin-right: 24px;
+        .img_icon{
+            color: rgba(255, 172, 106, 1);
+            height: 20px;
+            width: 13px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    .AvatarUser{
+        height: 40px;
+        width: 40px;
+        left: 0px;
+        top: 0px;
+        border-radius: 48px;
+    }
+    .nameUser{
+        margin-left: 8px;
+        position: relative;
+        padding-top: 15px;
+        span{
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            top: 10px;
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(126, 125, 136, 1);
+        }
+        p{
+            font-size: 16px;
+            font-weight: 700;
+            color: rgba(83, 82, 97, 1);
+            margin-top: 10px;
+        }
+    }
+}
