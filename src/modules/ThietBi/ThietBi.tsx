@@ -1,8 +1,10 @@
 // import Table from "react-bootstrap/Table";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Content } from "antd/es/layout/layout";
 // import data from "./data.json";
 import "./ThietBi.scss";
+import { thietbiCollection } from "../../lib/controller";
+import { onSnapshot } from "firebase/firestore";
 // import React from "react";
 import { Breadcrumb, Select, Input, Row, Col } from "antd";
 import { CaretDownOutlined } from "@ant-design/icons";
@@ -11,7 +13,17 @@ import UseName from "../../component/UseName/UseName";
 const { Search } = Input;
 const { Option } = Select;
 
+
 const ThietBi = () => {
+  useEffect(()=>
+  onSnapshot(thietbiCollection,(snapshot)=>{
+    snapshot.docs.map((doc)=>{
+      return{
+        id: doc.id,
+        ...doc.data(),
+      }
+    })
+  }))
   // const onChange = (value) => {
   //   console.log(`selected ${value}`);
   // };
